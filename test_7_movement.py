@@ -6,6 +6,8 @@ game = pg.Game(800, 600, "Тест движения")
 sprite = pg.AnimatedSprite("./platformer_sprites.png", (64, 64), (400, 300))
 sprite.set_scale(2.0)
 
+wall = pg.AnimatedSprite("./platformer_sprites.png", (64, 64), (500, 300))
+
 # Скорость движения
 speed = 5  # пикселей в секунду
 
@@ -31,6 +33,7 @@ def update():
 def draw():
     # Показываем хитбокс для наглядности
     sprite.debug_draw(game.screen)
+    wall.debug_draw(game.screen)
 
     # Координаты спрайта
     pg.Text(0, 0, f"X: {sprite.x:.1f}", size=18, color=(255, 255, 0)).draw(game.screen)
@@ -38,4 +41,5 @@ def draw():
 
 
 game.add_sprite(sprite)
+game.add_sprite(wall)
 game.run(update, draw)
