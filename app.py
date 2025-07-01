@@ -3,6 +3,7 @@ import pygame
 from pygine.scene import Scene, SceneManager
 
 pygame.init()
+<<<<<<< HEAD
 
 WIDTH, HEIGHT = 512, 512
 FPS = 60
@@ -115,3 +116,5 @@ def draw():
     
 
 game.run(update, draw)
+=======
+>>>>>>> 9b8da78970a8d779a2df6a84e8751b525dbbcd9e
