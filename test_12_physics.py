@@ -6,7 +6,7 @@ game = pg.Game(800, 600, "Простая физика")
 
 # Создаем физику
 physics = pg.PhysicsBody(gravity=500.0)
-physics.set_bounce_factor(0.9)  # Насколько хорошо мяч отскакивает
+physics.set_bounce_factor(0.2)  # Насколько хорошо мяч отскакивает
 
 # Мяч
 ball_x = 400  # Начальная позиция X
