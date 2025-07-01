@@ -11,6 +11,7 @@ wall = pg.AnimatedSprite("./platformer_sprites.png", (64, 64), (500, 300))
 # Скорость движения
 speed = 5  # пикселей в секунду
 
+wall1 = 
 
 def update():
     # Обрабатываем движение
