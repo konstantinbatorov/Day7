@@ -57,6 +57,8 @@ def draw():
         color=(255, 200, 200),
     ).draw(game.screen)
 
+def conto
+
 
 game.add_sprite(sprite)
 game.run(update, draw)
