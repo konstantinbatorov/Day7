@@ -46,7 +46,7 @@ class MenuScene(Scene):
 class GameScene(Scene):
     def __init__(self):
         super().__init__("game")
-        self.player = pg.AnimatedSprite("platformer_sprites_custom.png", (32, 32), (400, 300))
+        self.player = pg.AnimatedSprite("platformer_sprites.png", (32, 32), (400, 300))
         self.player.add_animation("idle", [0], fps=1)
         self.player.play_animation("idle")
         self.instruction_text = "Нажмите ESC для возврата в меню"
